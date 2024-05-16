@@ -9,9 +9,8 @@ import com.junapicommon.model.entity.UserInterfaceInfo;
 * @description 针对表【user_interface_info(用户调用接口关系)】的数据库操作Service
 * @createDate 2024-05-09 21:32:09
 */
-public interface InnerUserInterfaceInfoService extends IService<UserInterfaceInfo> {
+public interface InnerUserInterfaceInfoService  {
 
-    void validInterfaceInfo(UserInterfaceInfo userInterfaceInfo, boolean b);
 
     //接口调用服务
     boolean invokeAddCount(long interfaceInfoId,long userId);
